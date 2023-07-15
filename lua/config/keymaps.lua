@@ -46,3 +46,5 @@ local lazyterm = function()
 end
 map("n", "<C-r>", lazyterm, { desc = "Terminal (root dir)" })
 map("t", "<C-r>", "<cmd>close<cr>", { desc = "Hide Terminal" })
+
+--neotree config
