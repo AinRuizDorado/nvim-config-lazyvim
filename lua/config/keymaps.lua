@@ -26,8 +26,8 @@ for _, key in pairs({
   "<leader>w-", -- duplicate split window <C-W>s
   "<leader>w|", -- duplicate split window <C-W>v
   "<leader>qq", -- quit all
-  "<leader><tab>[",
-  "<leader><tab>]",
+  "<leader><tab>[", -- next tab
+  "<leader><tab>]", -- previous tab
 }) do
   vim.keymap.del("n", key)
 end
@@ -48,3 +48,4 @@ map("n", "<C-r>", lazyterm, { desc = "Terminal (root dir)" })
 map("t", "<C-r>", "<cmd>close<cr>", { desc = "Hide Terminal" })
 
 --neotree config
+map("n", "<leader>tr", "<cmd>Neotree<CR>")
