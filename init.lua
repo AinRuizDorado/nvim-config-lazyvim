@@ -12,8 +12,8 @@ if vim.loop.os_uname().sysname == "Darwin" then
   vim.notify("MacOS init")
 end
 
-if vim.loop.os_uname().sysname == "Darwin2" then
-  vim.notify("Win32 init")
+if vim.loop.os_uname().sysname == "Windows_NT" then
+  vim.notify("Windows Init")
   vim.cmd([[set shell=powershell]])
 end
 
