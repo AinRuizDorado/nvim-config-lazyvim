@@ -11,12 +11,15 @@ opt.expandtab = false -- Use spaces instead of tabs
 if vim.loop.os_uname().sysname == "Darwin" then
   vim.notify("MacOS init")
 end
-
+--
 if vim.loop.os_uname().sysname == "Windows_NT" then
   vim.notify("Windows Init")
-  vim.cmd([[set shell=powershell]])
+  vim.cmd("let &shell = 'powershell'")
+  vim.cmd(
+    "let &shellcmdflag = '-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;'"
+  )
+  vim.cmd("let &shellredir = '2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode'")
+  vim.cmd("let &shellpipe = '2>&1 | Out-File -Encoding UTF8 %s; exit $LastExitCode'")
+  vim.cmd("set shellquote= shellxquote=")
 end
-
-vim.cmd([[set shellcmdflag=-command]])
-vim.cmd([[set shellquote=\"]])
-vim.cmd([[set shellquote=]])
+--
