@@ -40,12 +40,5 @@ map("n", "<leader>w", "<cmd>w<cr><esc>", { desc = "Faster Write" })
 map("n", "<A-.>", "<cmd>tabnext<cr>")
 map("n", "<A-,>", "<cmd>tabprevious<cr>")
 
--- terminal handler
-local lazyterm = function()
-  Util.float_term(nil, { cwd = Util.get_root() })
-end
-map("n", "<C-r>", lazyterm, { desc = "Terminal (root dir)" })
-map("t", "<C-r>", "<cmd>close<cr>", { desc = "Hide Terminal" })
-
 --neotree config
 map("n", "<leader>tr", "<cmd>Neotree<CR>")
