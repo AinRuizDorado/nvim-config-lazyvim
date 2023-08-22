@@ -21,10 +21,10 @@ end
 
 -- Sadly I have to delete the default keymapings to this thing to work, lazyvim is planned to have default mappings that not apply to my workflow
 for _, key in pairs({
-  "<leader>wd", -- delete window, <C-W>c, now just quit
-  "<leader>ww", -- other window, <C-W>p, not necessary
-  "<leader>w-", -- duplicate split window <C-W>s
-  "<leader>w|", -- duplicate split window <C-W>v
+  -- "<leader>wd", -- delete window, <C-W>c, now just quit
+  -- "<leader>ww", -- other window, <C-W>p, not necessary
+  -- "<leader>w-", -- duplicate split window <C-W>s
+  -- "<leader>w|", -- duplicate split window <C-W>v
   "<leader>qq", -- quit all
   "<leader><tab>[", -- next tab
   "<leader><tab>]", -- previous tab
@@ -34,7 +34,7 @@ end
 
 -- faster quit and save
 map("n", "<leader>q", "<cmd>q<cr>", { desc = "Faster quit" })
-map("n", "<leader>w", "<cmd>w<cr><esc>", { desc = "Faster Write" })
+-- map("n", "<leader>w", "<cmd>w<cr><esc>", { desc = "Faster Write" })
 
 -- Tabs Handler
 map("n", "<A-.>", "<cmd>tabnext<cr>")

@@ -23,3 +23,7 @@ if vim.loop.os_uname().sysname == "Windows_NT" then
   vim.cmd("set shellquote= shellxquote=")
 end
 --
+vim.cmd([[set shellcmdflag=-command]])
+vim.cmd([[set shellquote=\"]])
+vim.cmd([[set shellquote=]])
+vim.opt.clipboard = "unnamedplus"
