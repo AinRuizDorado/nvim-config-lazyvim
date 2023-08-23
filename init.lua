@@ -27,4 +27,5 @@ if vim.loop.os_uname().sysname == "Windows_NT" then
   vim.cmd("set shellquote= shellxquote=")
 end
 --
+-- If you are in Linux you need to install xclip to the clipboard to work
 vim.opt.clipboard = "unnamedplus"
