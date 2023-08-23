@@ -25,16 +25,11 @@ for _, key in pairs({
   -- "<leader>ww", -- other window, <C-W>p, not necessary
   -- "<leader>w-", -- duplicate split window <C-W>s
   -- "<leader>w|", -- duplicate split window <C-W>v
-  "<leader>qq", -- quit all
   "<leader><tab>[", -- next tab
   "<leader><tab>]", -- previous tab
 }) do
   vim.keymap.del("n", key)
 end
-
--- faster quit and save
-map("n", "<leader>q", "<cmd>q<cr>", { desc = "Faster quit" })
--- map("n", "<leader>w", "<cmd>w<cr><esc>", { desc = "Faster Write" })
 
 -- Tabs Handler
 map("n", "<A-.>", "<cmd>tabnext<cr>")

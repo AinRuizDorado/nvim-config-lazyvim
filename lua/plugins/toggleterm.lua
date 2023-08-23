@@ -21,14 +21,6 @@ return {
         desc = "ToggleTerm (horizontal)",
       },
       {
-        "<leader>tv",
-        function()
-          local count = vim.v.count1
-          require("toggleterm").toggle(count, 0, Util.get_root(), "vertical")
-        end,
-        desc = "ToggleTerm (vertical)",
-      },
-      {
         "<leader>tn",
         "<cmd>ToggleTermSetName<cr>",
         desc = "Set term name",
@@ -75,8 +67,7 @@ return {
       start_in_insert = true,
       insert_mappings = true, -- whether or not the open mapping applies in insert mode
       terminal_mappings = true, -- whether or not the open mapping applies in the opened terminals
-      persit_mode = false,
-      persist_size = true,
+      persist_size = false,
       direction = "horizontal" or "vertical" or "window" or "float",
       -- direction = "vertical",
       close_on_exit = true, -- close the terminal window when the process exits

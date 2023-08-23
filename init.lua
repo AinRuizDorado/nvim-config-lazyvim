@@ -11,6 +11,10 @@ opt.expandtab = false -- Use spaces instead of tabs
 if vim.loop.os_uname().sysname == "Darwin" then
   vim.notify("MacOS init")
 end
+
+if vim.loop.os_uname().sysname == "Linux" then
+  vim.notify("Linux init")
+end
 --
 if vim.loop.os_uname().sysname == "Windows_NT" then
   vim.notify("Windows Init")
@@ -23,7 +27,4 @@ if vim.loop.os_uname().sysname == "Windows_NT" then
   vim.cmd("set shellquote= shellxquote=")
 end
 --
-vim.cmd([[set shellcmdflag=-command]])
-vim.cmd([[set shellquote=\"]])
-vim.cmd([[set shellquote=]])
 vim.opt.clipboard = "unnamedplus"
