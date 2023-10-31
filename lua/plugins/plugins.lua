@@ -6,4 +6,12 @@ return {
       require("colorizer").setup({})
     end,
   },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      -- Automatically format on save
+      autoformat = true,
+    },
+  },
+
 }
