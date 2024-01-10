@@ -4,11 +4,13 @@ return {
   -- { "thedenisnikulin/vim-cyberpunk" },
 
   { "rebelot/kanagawa.nvim" },
+	{"RRethy/nvim-base16"},
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "base16-windows-95",
+      -- colorscheme = "dosbox",
     },
   },
 }

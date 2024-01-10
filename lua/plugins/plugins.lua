@@ -10,8 +10,7 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       -- Automatically format on save
-      autoformat = true,
+      autoformat = false,
     },
   },
-
 }
