@@ -24,6 +24,8 @@ return {
         "^lib/",
         "/node_modules/",
         "^node_modules/",
+        "/www/",
+        "^www/",
       },
     },
   }),

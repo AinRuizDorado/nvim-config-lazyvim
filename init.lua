@@ -28,3 +28,14 @@ end
 --
 -- If you are in Linux you need to install xclip to the clipboard to work
 vim.opt.clipboard = "unnamedplus"
+
+-- neovide config
+
+if vim.g.neovide then
+  vim.o.guifont = "BigBlueTerm437 Nerd Font:h14" -- text below applies for VimScript
+  vim.g.neovide_hide_mouse_when_typing = true
+  vim.g.neovide_fullscreen = true
+  vim.g.neovide_cursor_vfx_mode = "railgun"
+  vim.g.neovide_cursor_vfx_mode = "ripple"
+  vim.g.neovide_refresh_rate = 30
+end
