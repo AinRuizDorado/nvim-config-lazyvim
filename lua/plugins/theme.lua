@@ -1,7 +1,7 @@
 return {
 
   -- add gruvbox
-  -- { "thedenisnikulin/vim-cyberpunk" },
+  { "thedenisnikulin/vim-cyberpunk" },
 
   { "rebelot/kanagawa.nvim" },
 	{"RRethy/nvim-base16"},
@@ -9,7 +9,8 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "base16-windows-95",
+      -- colorscheme = "base16-windows-95",
+      colorscheme = "kanagawa",
       -- colorscheme = "dosbox",
     },
   },
