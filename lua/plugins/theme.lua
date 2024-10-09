@@ -6,6 +6,7 @@ return {
 
   { "rebelot/kanagawa.nvim" },
   { "RRethy/nvim-base16" },
+	{ "yorumicolors/yorumi.nvim" },
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
@@ -13,7 +14,8 @@ return {
       -- colorscheme = "base16-windows-95",
       -- colorscheme = "kanagawa",
       -- colorscheme = "dosbox",
-      colorscheme = "carbonfox",
+      -- colorscheme = "carbonfox",
+			colorscheme = "yorumi",
     },
   },
 }
