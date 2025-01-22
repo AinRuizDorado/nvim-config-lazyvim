@@ -26,6 +26,8 @@ return {
         "^node_modules/",
         "/www/",
         "^www/",
+				"/plugins",
+				"^plugins",
       },
     },
   }),
