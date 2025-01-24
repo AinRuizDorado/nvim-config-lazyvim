@@ -1,4 +1,4 @@
--- return {
+return {
 --
 --   "hoob3rt/lualine.nvim",
 --   config = function()
@@ -17,4 +17,4 @@
 --       },
 --     })
 --   end,
--- }
+}
