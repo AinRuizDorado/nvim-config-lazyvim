@@ -54,3 +54,4 @@ vim.api.nvim_set_keymap("n", "<leader>sp", "<Plug>(SpotifyPause)", { silent = tr
 vim.api.nvim_set_keymap("n", "<leader>so", ":Spotify<CR>", { silent = true }) -- Open Spotify Search window
 vim.api.nvim_set_keymap("n", "<leader>sd", ":SpotifyDevices<CR>", { silent = true }) -- Open Spotify Devices window
 vim.api.nvim_set_keymap("n", "<leader>sa", "<Plug>(SpotifyPrev)", { silent = true }) -- Go back to the previous track
+
