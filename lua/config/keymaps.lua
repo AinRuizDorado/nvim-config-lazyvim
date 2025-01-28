@@ -36,22 +36,25 @@ map("n", "<A-.>", "<cmd>tabnext<cr>")
 map("n", "<A-,>", "<cmd>tabprevious<cr>")
 
 --neotree config
-map("n", "<leader>tr", "<cmd>Neotree<CR>")
+map("n", "<leader>tr", "<cmd>Neotree<CR>", { desc = "Toggle Neotree" })
 
-vim.keymap.set({"n","x"}, "p", "<Plug>(YankyPutAfter)")
-vim.keymap.set({"n","x"}, "P", "<Plug>(YankyPutBefore)")
-vim.keymap.set({"n","x"}, "gp", "<Plug>(YankyGPutAfter)")
-vim.keymap.set({"n","x"}, "gP", "<Plug>(YankyGPutBefore)")
+vim.keymap.set({"n","x"}, "p", "<Plug>(YankyPutAfter)", { desc = "Yanky Put After" })
+vim.keymap.set({"n","x"}, "P", "<Plug>(YankyPutBefore)", { desc = "Yanky Put Before" })
+vim.keymap.set({"n","x"}, "gp", "<Plug>(YankyGPutAfter)", { desc = "Yanky GPut After" })
+vim.keymap.set({"n","x"}, "gP", "<Plug>(YankyGPutBefore)", { desc = "Yanky GPut Before" })
 
-vim.keymap.set("n", "<c-p>", "<Plug>(YankyPreviousEntry)")
-vim.keymap.set("n", "<c-n>", "<Plug>(YankyNextEntry)")
+vim.keymap.set("n", "<c-p>", "<Plug>(YankyPreviousEntry)", { desc = "Yanky Previous Entry" })
+vim.keymap.set("n", "<c-n>", "<Plug>(YankyNextEntry)", { desc = "Yanky Next Entry" })
 
-vim.keymap.set('n', '<leader><F5>', vim.cmd.UndotreeToggle)
+vim.keymap.set('n', '<leader><F5>', vim.cmd.UndotreeToggle, { desc = "Toggle Undotree" })
 
 
-vim.api.nvim_set_keymap("n", "<leader>ss", "<Plug>(SpotifySkip)", { silent = true }) -- Skip the current track
-vim.api.nvim_set_keymap("n", "<leader>sp", "<Plug>(SpotifyPause)", { silent = true }) -- Pause/Resume the current track
-vim.api.nvim_set_keymap("n", "<leader>so", ":Spotify<CR>", { silent = true }) -- Open Spotify Search window
-vim.api.nvim_set_keymap("n", "<leader>sd", ":SpotifyDevices<CR>", { silent = true }) -- Open Spotify Devices window
-vim.api.nvim_set_keymap("n", "<leader>sa", "<Plug>(SpotifyPrev)", { silent = true }) -- Go back to the previous track
+vim.api.nvim_set_keymap("n", "<leader>ss", "<Plug>(SpotifySkip)", { silent = true, desc = "Skip the current track" })
+vim.api.nvim_set_keymap("n", "<leader>sp", "<Plug>(SpotifyPause)", { silent = true, desc = "Pause/Resume the current track" })
+vim.api.nvim_set_keymap("n", "<leader>so", ":Spotify<CR>", { silent = true, desc = "Open Spotify Search window" })
+vim.api.nvim_set_keymap("n", "<leader>sd", ":SpotifyDevices<CR>", { silent = true, desc = "Open Spotify Devices window" })
+vim.api.nvim_set_keymap("n", "<leader>sa", "<Plug>(SpotifyPrev)", { silent = true, desc = "Go back to the previous track" })
 
+
+-- center pad
+vim.api.nvim_set_keymap("n", "<leader>cp", ":Centerpad<CR>", { silent = true, desc = "Toggle Centerpad" })
